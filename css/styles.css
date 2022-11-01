@@ -1,0 +1,348 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    color: #707070;
+}
+a{
+    color: #707070;
+    text-decoration: none;
+}
+.wrapper{
+    max-width: 800px;
+    margin: 40px auto;
+}
+header .profile{
+     display: flex;
+     margin-bottom: 24px;
+}
+header .profile img{
+    width: 150px; 
+    height: 150px;
+    border-radius: 100px;
+    object-fit: cover;
+}
+header .profile .detail{
+    margin-left: 25px;
+}
+header .profile h1{
+    font-size: 4.5em;
+    font-weight: lighter;
+}
+header .profile .detail .role{
+    background-color: #4595f4;
+    color: white;
+    padding: 7px 15px;
+    border-radius: 10px;
+    margin-left: 190px;
+}
+header .bio p{
+    margin-bottom: 20px;
+}
+header .bio .contact{
+    display: flex;
+    justify-content: space-between;
+
+}
+header .bio a{
+    color: #4595f4;
+    text-decoration: underline;
+}
+header{
+    margin-bottom: 24px;
+}
+/*competence*/
+section .skills{
+    display: flex;
+    margin-top: 2px; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+section .skills .skills-item{
+    border: 1px solid  #707070;
+    border-radius: 7px;
+    padding:10px;
+    display: flex;
+    align-items: center;
+    width: 49%;
+    margin-bottom: 10px;
+    
+}
+section .skills .skills-item .progress{
+    font-size: 42px;
+    margin-right: 10px;
+}
+.skills .skills-item:hover, .langs .lang-item:hover {
+    background-color: #4595f4;
+    color: whitesmoke;
+    border: none;
+}
+.langs{
+    display: flex;
+    margin-top: 20px;
+}
+.langs .lang-item{
+    border: 1px solid #707070;
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+    padding: 7px;
+    border-radius: 10px;
+}
+.langs .lang-item img{
+    width: 40px;
+    height: 28px;
+    margin-right: 12px;
+}
+/*EXPERIENCES*/
+section .expers{
+    display: flex;
+    margin-top: 10px;
+    
+}
+section .title{
+    margin-top: 20px;
+}
+.expers .exp-item{
+    width: 22%;
+    
+}
+.expers .exp-item .timeline{
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.expers .exp-item .line{
+    width: 100px;
+    margin-left: 7px;
+    border: none;
+    height: 2px;
+    background-color: #707070;
+}
+.expers .exp-item .circle{
+    background-color: #707070;
+    width: 12px;
+    height: 12px;
+    border-radius: 10px;
+    display: block;
+}
+.expers .exp-item .timeline:hover .line, .expers .exp-item .timeline:hover .circle{
+    background-color: green;
+}
+/* FORMULAIRE*/
+
+form .mon-group{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+form .mon-group input{
+    width: 80%;
+    margin: 2px;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: larger;
+}
+form .mon-group input:hover,
+form .control-message textarea:hover,
+form .control-objet select:hover{
+    border: 5px double #4595f4;
+}
+ form .control-objet select{
+    width: 15%;
+    height: 40px;
+    border: 1px solid #707070;
+    border-width: 2px;
+    border-radius: 5px;
+    font-size: large;
+    
+ }
+ form .control-objet option{
+    background-color: #478d66;
+ }
+ form .radion-input{
+    display: inline;
+    align-items: flex-start;    
+ }
+ form .radion-input input, label{
+    margin-top: 10px;
+    font-size: larger;
+ }
+ form .control-message{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    
+ }
+ form .control-message textarea{
+    font-size: larger;
+    border: 2px solid;
+    border-radius: 20px; 
+    width: 80%;
+ }
+ form .control-message span{
+    color: red;
+    font-style: italic;
+ }
+ form button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 15%;
+    height: 50px;
+    border-radius: 30px;
+    font-size: larger;
+    background-color: #707070;
+    color: aliceblue;
+    border: none;
+ }
+ form button:hover{
+    background-color: #4595f4;
+ }
+
+
+
+/*MESDIA QUERIES*/
+
+
+
+/* Nouvelles règles des telephones android au plus 800px de large */
+@media screen and (max-width: 800px)
+{
+  p,section {
+    margin-left: 10px;
+  }
+    header .profile{
+        display: flex;
+        margin-bottom: 24px;
+        margin-left: 20px;
+   }
+   header .profile img{
+       width: 100px; 
+       height: 100px;
+       border-radius: 100px;
+       object-fit: cover;
+       
+   }
+   header .profile .detail{
+       margin-left: 5px;
+   }
+   header .profile h1{
+       font-size: 2.5em;
+       font-weight: lighter;
+   }
+   header .profile .detail .role{
+       background-color: #4595f4;
+       color: white;
+       padding: 2px 7px;
+       border-radius: 10px;
+       margin-left: 0px;
+   }
+       header .bio p{
+        margin-bottom: 20px;
+    }
+    header .bio .contact{
+        display: flex;
+        flex-direction: row;
+    }
+    header .bio a{
+        color: #4595f4;
+        text-decoration: underline;
+        margin-left: 15px;
+        margin-right: 25px;
+    }
+    section .skills{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 10px; 
+        
+    }
+    section .skills .skills-item{
+        display: flex;
+        align-items: center;
+        border: 1px solid  #363434;
+        border-radius: 7px;
+        padding: 12px;
+        width: 90%;
+        margin-bottom: 10px;
+        margin-right: 22px;
+    }
+    .langs{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+    .langs .lang-item{
+        border: 1px solid #707070;
+        display: flex;
+        padding: 10px;
+        
+        margin: 5px;
+        width: 40%;
+        border-radius: 10px;
+    }
+    /*EXPERIENCES QWERIES*/
+    .expers .exp-item{
+        width: 22%;
+        
+    }
+    .expers .exp-item .timeline{
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+        padding: 0px;
+        margin: 5px;
+        margin-right: 1px;
+    }
+    .expers .exp-item .line{
+        width: 100px;
+        margin-left: 5px;
+        border: none;
+        height: 2px;
+        background-color: #707070;
+    }
+    .expers .exp-item .circle{
+        background-color: #707070;
+        width: 12px;
+        height: 12px;
+        border-radius: 10px;
+        display: block;
+        margin-left: 9px;
+    }
+    .expers .exp-item p{
+        font-size: 14px;
+        color: black;
+    }  
+    form .control-objet select{
+        width: 20%;
+        height: 40px;
+        border: 1px solid #707070;
+        border-width: 2px;
+        border-radius: 5px;
+        font-size: large;
+        
+     } 
+    form .control-message{
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px;
+        height: 120px;
+        padding-left: 10px;
+        padding-top: 10px;
+     }
+     form button{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 25%;
+        height: 50px;
+        border-radius: 30px;
+        font-size: larger;
+        background-color: #707070;
+        color: aliceblue;
+        border: none;
+     }
+}
